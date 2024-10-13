@@ -19,5 +19,4 @@ pub fn main() {
 
   io.println(sud |> sudoku.solved |> sudoku.opt_to_string)
   io.println(impossible |> sudoku.solved |> sudoku.opt_to_string)
-
 }

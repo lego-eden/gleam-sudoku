@@ -1,8 +1,8 @@
 import gleam/int
 import gleam/io
+import gleam/list
 import gleam/option.{type Option, None, Some}
 import gleam/set.{type Set}
-import gleam/list
 
 pub opaque type Cell {
   Known(Int)
@@ -76,4 +76,6 @@ pub fn to_string(cell: Cell) -> String {
   }
 }
 
-pub fn new() -> Cell { Unknown(set.from_list(list.range(1, 9))) }
+pub fn new() -> Cell {
+  Unknown(set.from_list(list.range(1, 9)))
+}
